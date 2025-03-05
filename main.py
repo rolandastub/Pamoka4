@@ -1,4 +1,5 @@
 import random
+from operator import length_hint
 
 # print in
 # numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30]
@@ -109,15 +110,86 @@ raides = ['B','A','D','C']
 raides.sort()
 print(raides)
 
-# Sugeneruokite 3 masyvus pagal 3 uždavinio sąlygą. Sudėkite masyvus, sudėdami atitinkamas reikšmes.
+# 5Sugeneruokite 3 masyvus pagal 3 uždavinio sąlygą. Sudėkite masyvus, sudėdami atitinkamas reikšmes.
 # Paskaičiuokite kiek unikalių reikšmių kombinacijų gavote.
-
+print(" === 5 uzd. ===")
 raides = ['A','B','C','D']
 ilgis = 200
 seka =[]
+seka1 =[]
+seka2 =[]
 for i in range (ilgis):
     raides_pozicija = random.randint(0, len(raides)-1)
     raide = raides[raides_pozicija]
     seka.append(raide)
-    print(seka*3)
+
+    raides_pozicija1 = random.randint(0, len(raides)-1)
+    raide1 = raides[raides_pozicija1]
+    seka1.append(raide1)
+
+    raides_pozicija2 = random.randint(0, len(raides) - 1)
+    raide2 = raides[raides_pozicija2]
+    seka2.append(raide2)
+print("Sekos numeris yra 1")
+print(seka)
+
+print("Sekos numeris yra 2")
+print(seka1)
+
+print ("Sekos numeris yra 3")
+print(seka2)
+
+print(" === 5 uzd. === antra dalis")
+#Sudėkite masyvus, sudėdami atitinkamas reikšmes. Paskaičiuokite kiek unikalių reikšmių kombinacijų gavote.
+
+# raides = ['A','B','C','D']
+# ilgis = 200
+
+# seka = [0:201]
+# seka1 = [:201]
+# seka2 = [:201]
+# print
+# seku_suma = seka1+ seka2+ seka
+# print(seku_suma)
+# 'BDB','DCC','BCD',
+
+
+# PRASUKTI KOKI NORS CIKLA PRO PIRMA MASYVA, TOKIU BUDU, KAD TURETUM INDEXUS, IR ATSPAUSDINTI MASYVO ELEMENTUS
+# PAPILDYTI KODA: TAS REIKSMAS SUKRAUTI I NAUJA MASYVA
+# KLAUSTI NAGLIO KA DARYTI TOLIAU
+
+
+#
+# raides = ['A','B','C','D']
+# ilgis = 200
+# seka =[]
+# for i in range (ilgis):
+#     raides_pozicija = random.randint(0, len(raides)-1)
+#     raide = raides[raides_pozicija]
+#     seka.append(raide)
+#
+# print("Sekos numeris  1")
+# print(seka)
+#
+# masyvas = []
+#
+# for i in range(len(seka)):
+#     print(f"Indeksas: {i}, Reikšmė: {seka[i]}, {seka1[i]}, {seka2[i]} {seka[i]+seka1[i]+seka2[i]}")
+#     masyvas.append(seka[i] + seka1[i] + seka2[i])
+#
+# print(masyvas)
+
+print("======================6 uzduotis ===============================================")
+
+# 6. Sugeneruokite du masyvus, kurių reikšmės yra atsitiktiniai skaičiai nuo 100 iki 999.
+# Masyvų ilgiai 100. Masyvų reikšmės turi būti unikalios savo masyve
+
+
+ilgis = 100
+reiksme_min = 100
+reiksme_max =999
+masyvas1 = []
+masyvas2 = []
+for i in range(len()):
+
 
